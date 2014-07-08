@@ -58,15 +58,14 @@ var jack_bauer_facts = [
 	"Ha a válasz Jack Bauer, mindegy, mi volt a kérdés.",
 	"Ha a mumus aludni megy, bezárja a szobaajtót, nehogy Jack Bauer bejöjjön.",
 	"A reklámszünetekben Jack Bauernek jut ideje, hogy megoldja a Helyszínelők eseteit is.",
-	"Jack Bauer, ha siet, a sípszó előtt hagy üzenetet",
-	"Jack Bauer már annyi bűnözőt iktatott ki, hogy a CIA \"Most Wanted\" listáján az ötödik egy 18 éves maláj srác volt, aki illegálisan letöltötte a Tüskevár című filmet."
+	"Jack Bauer, ha siet, a sípszó előtt hagy üzenetet"
 ];
 
 var getAFact = function() {
 	// check if we're out of facts to avoid an indexOutOfBounds exception
 	if(jack_bauer_facts.length === 0) {
 		// all the facts have been seen, tell user that they're done.
-		$("#fact").text("Chuck Norris can create infinite geeky facts about himself, but we can't! Check out our GitHub page to help add more!");
+		$("#fact").text("Jack Bauer már annyi bűnözőt iktatott ki, hogy a CIA \"Most Wanted\" listáján az ötödik egy 18 éves maláj srác volt, aki illegálisan letöltötte a Tüskevár című filmet.");
 	} else {
 		// there are still facts in the array, so picks a random one
 		var index = Math.floor(Math.random() * jack_bauer_facts.length);
